@@ -42,15 +42,32 @@ def square(a):
     """Ruudu külg
     Annab vastust ruudu pindala,diogonaal,ümbermõõt
     :param int külg: Kui pikk külg
-    :rtype float:
+    :rtype bool:Funktsiooni vastus valemi järgi
     """
     p = 4*a
     s = a*a
     d = (a**2) / 2
     k = (p, s, d)
     return k
-    
 
+def season(number):
+    """Aastaajad
+    Saab vastust kuu aastaaja järgi
+    :param int number:Kuu
+    :rtype bool:Funktisooni järgi saame vastust milline aastaaja on
+    """
+    if number == 12 or 1 <= number <= 2:
+        print("Talv")
+    elif  3 <= number <= 5:
+        print("Kevad")
+    elif 6 <= number <= 8:
+        print("Suvi")
+    elif 9 <= number <= 11:
+        print("Sügis")
+    else:
+        print("Kirjuta ainult aastaajad")
+    n = int(input("Kirjuta kuu numbritega : "))
+    return n
 
 
 
